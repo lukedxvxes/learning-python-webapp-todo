@@ -1,8 +1,2 @@
-First Todo
-Wake up
-Eat
-Protein Shake
-Workout
-Coding
-new
-hello
+something new again
+wake up

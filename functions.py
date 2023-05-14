@@ -22,22 +22,8 @@ def add_todo(action):
     write_todos(all_todos)
 
 
-def edit_todo(index, action):
-    edit_item = int(index)
-    todos = read_todos()
-    todos[edit_item] = format_string(action)
-    write_todos(todos)
-
-
 def complete_todo(index):
     todos = read_todos()
     completed_item = int(index)
     todos.pop(completed_item)
     write_todos(todos)
-
-
-def refresh_window(window):
-    window['todos-list'].Widget.configure(height=len(read_todos()))
-    window['todos-list'].update(values=read_todos())
-    window['todo'].update(value="")
-    window.move_to_center()
